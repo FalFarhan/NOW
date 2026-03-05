@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/20 backdrop-blur-xl border border-white/30 shadow-lg;
+  }
+  .glass-panel-dark {
+    @apply bg-black/30 backdrop-blur-xl border border-white/10 shadow-lg;
+  }
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: var(--font-sans);
+}
+
+/* OpenLayers custom attribution styling */
+.ol-attribution {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(4px);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+.ol-attribution button {
+  display: none !important;
+}
+.ol-attribution ul {
+  color: #fff !important;
+  font-size: 10px;
+}
+.ol-attribution a {
+  color: #fff !important;
+}

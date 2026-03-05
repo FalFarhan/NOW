@@ -1,0 +1,5 @@
+{
+  "name": "NOW Flight Tracker",
+  "description": "Real-time flight and weather tracking application with a modern glassmorphism design.",
+  "requestFramePermissions": ["geolocation"]
+}
